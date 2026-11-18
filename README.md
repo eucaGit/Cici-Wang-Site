@@ -1,23 +1,24 @@
-# CiCi Wang — Concentrate and Care
+# CiCi Wang website
 
-Buildless responsive website for GitHub Pages. Open index.html via any static server. All paths support the /Cici-Wang-Site/ project prefix.
+Public Chinese website: https://eucagit.github.io/Cici-Wang-Site/
+Public English website: https://eucagit.github.io/Cici-Wang-Site/en/
+Private administration service: https://cici-wang-growth-portal.workspace-743587.chatgpt.site/admin/
 
-## Publishing
-GitHub Pages: main branch, / (root). Public URL: https://eucagit.github.io/Cici-Wang-Site/
+## Design
+Independent Chinese and English documents, with matching language switches and hreflang. Apple system fonts are requested through CSS rather than bundling restricted font binaries. Body text is 20px, navigation 17px, desktop titles up to 80px. Serif headings use ui-serif with Chinese and non-Apple fallbacks. Dark forest-green transparent logo and conservatively restored portrait are derived from the supplied originals; originals remain in assets/. Gray translucent overlays provide hierarchy without reducing text contrast.
 
-## Content and evidence
-See sources.html for verification and attribution. 47 MLSListings Recent Transactions are now fully indexed, photographed, and linked to independent landing pages. This is not a lifetime total or seller-only tally. The user-provided 10 years experience is attributed. The proposed 2-year / 10 sales / $5M+ claim is **not verified and not published as an achievement**; config.js records it with publish:false. Obtain transaction addresses, close dates, prices and representation before publishing it. The complete portfolio contains 47 verified recent transactions plus one pending listing; homepage selections focus on Peninsula luxury homes.
+## Verified records
+47 MLSListings Recent Transactions, verified November 17, 2026, each with an independent Chinese and English page. This is not a lifetime or seller-only total. Property sources remain on each page. See sources.html for biography, photography, restoration, and performance attribution.
 
-## Form
-No server endpoint is configured. The form validates fields and consent, prepares a mailto to the public brokerage email, and explicitly requires the visitor to send it in their own email application. It never claims delivery. Copy and phone alternatives are available. No contact data is put in URL query strings or stored locally.
+## Administration and publishing
+The administration service is deployed with a real D1 database, server-side password verification, HttpOnly sessions, login throttling, private drafts, review/edit/publish/unpublish, and private lead records. Its source is maintained separately in the task's work/cici-backend directory and the Site source repository. Passwords and service credentials are hosted runtime secrets, not in this public repository.
 
-To enable a real online form, set formEndpoint in config.js to an HTTPS POST endpoint that accepts JSON, validates input, limits abuse, and returns a successful HTTP status only after accepting the lead. Update the visitor-facing form notice, button wording and privacy.html to match its actual processor, retention and usage before activation. No secrets belong in client-side config.js.
+Access remains owner-private. A request to make the service public was rejected by automatic review; no workaround was used. Public article access and automatic public lead collection remain disabled until the user approves that audience change. The public site still supports email preparation and phone contact. config.js publicApiEnabled must stay false until approval and successful public access checks. The privacy notice must be updated when public collection is activated.
 
-## Assets
-User's original logo: assets/cici-logo.png. Navigation crop: cici-wordmark.png. Official original portrait and all 47 high-resolution sale photos are traceable to sources.html and per-property links. Confirm marketing reproduction rights with Cici. No stock property photos or invented testimonials.
+Published backend articles are server-rendered HTML with canonical URLs, language alternates, structured data, and a sitemap. While the service is private, these pages are only available to authorized visitors and are not publicly indexable.
 
-## C-log
-Three complete editorial sample articles, clearly labeled pending Cici review, each with an independent URL. Replace/review and approve before attributing to Cici.
+## Daily ideas
+The Codex automation 'CiCi 每日 Blog 选题' (cici-blog) is enabled daily at 09:00 America/Los_Angeles, delivering to the current chat. It prepares a draft in data/daily-idea.json, then asks whether to publish. The administration service syncs that file after login. No article is published without review. scripts/prepare-daily-idea.mjs creates an evergreen editorial draft structure; the daily task should improve it, check any current facts, avoid repetition, and commit only the draft file. Automation execution depends on the Codex automation environment being available. No traffic, indexing, ranking, or daily lead guarantee is made.
 
-## QR
-assets/home-value-qr.png and .svg point to the public home-value/ page with utm_source=wechat&utm_medium=qr&utm_campaign=local_home_value. share/ provides a download. Regenerate when moving domains.
+## Local preview
+Serve this directory with a static HTTP server. No build dependencies are required for the public site. Root and en/ contain complete independent HTML pages. GitHub Pages publishes main at the root.

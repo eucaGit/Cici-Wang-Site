@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /Cici-Wang-Site/admin/
+Disallow: /Cici-Wang-Site/en/admin/
 Sitemap: https://eucagit.github.io/Cici-Wang-Site/sitemap.xml
