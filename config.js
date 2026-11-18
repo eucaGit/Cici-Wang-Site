@@ -1,0 +1,1 @@
+window.CICI_CONFIG = { formEndpoint: "", contactEmail: "cici.wang@cbrealty.com", pendingClaims: { luxurySales: { text: "2 年成交 10 套 $5M+", verified: false, publish: false } } };
