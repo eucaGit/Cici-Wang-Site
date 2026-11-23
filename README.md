@@ -22,3 +22,7 @@ The Codex automation 'CiCi 每日 Blog 选题' (cici-blog) is enabled daily at 0
 
 ## Local preview
 Serve this directory with a static HTTP server. No build dependencies are required for the public site. Root and en/ contain complete independent HTML pages. GitHub Pages publishes main at the root.
+
+## Reviewed public articles
+
+On November 23, 2026, the owner approved publication of the November 21, 22, and 23 bilingual drafts. These are published as static HTML under clog/ and en/clog/ on the existing public GitHub Pages site, with article-list links, language alternates, canonical URLs, BlogPosting metadata, and sitemap entries. Approved source records and public URLs are archived in data/published/YYYY-MM-DD.json. The private administration service and its database remain separate; static publication does not change its access or mark its database rows as published.

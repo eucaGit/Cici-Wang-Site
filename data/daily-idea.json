@@ -1,7 +1,7 @@
 {
   "id": "2026-11-23",
   "created": "2026-11-23",
-  "status": "draft",
+  "status": "published",
   "title_zh": "Los Altos、Mountain View 与 Palo Alto 选房：如何实测一家人的通勤？",
   "title_en": "Buying in Los Altos, Mountain View, or Palo Alto: How to Test Your Household Commute",
   "summary_zh": "地图上的距离只是起点。把进办公室、接送和换乘放进同一张清单，按实际时段体验路线，让选房更贴近日常生活。",
@@ -13,5 +13,8 @@
     "https://www.caltrain.com/go",
     "https://www.vta.org/",
     "https://www.vta.gov/faq/what-difference-between-service-alerts-and-real-time"
-  ]
+  ],
+  "published": "2026-11-23",
+  "url_zh": "https://eucagit.github.io/Cici-Wang-Site/clog/household-commute-checklist/",
+  "url_en": "https://eucagit.github.io/Cici-Wang-Site/en/clog/household-commute-checklist/"
 }
